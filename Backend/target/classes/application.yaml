@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: KidKnect
+    
+ #DataSource configuration for database connection
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/kidknect
+    username: postgres
+    password: 110062
+
+ #JPA (Java Persistence API) configuration common
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update    
+      
+      
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: cryptobankhub@gmail.com
+    password: yolmpacybtucqvca
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true  
+    
+server:
+  port: 9090
+
+SECRET_KEY: 5367566B59703373367639792F423F4528482B4D6251655468576D5A71347437
